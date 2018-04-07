@@ -1,14 +1,1471 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>ChatbotADA</title>
-  <base href="/">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <style type="text/css">.gm-style-pbc {
+    transition: opacity ease-in-out;
+    background-color: #e7e7e7;
+    text-align: center
+  }
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  .gm-style-pbt {
+    font-size: 22px;
+    color: white;
+    font-family: Roboto, Arial, sans-serif;
+    position: relative;
+    margin: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%)
+  }
+  </style>
+
+  <meta name="author" content="">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Chatbot ADA</title>
+
+  <!-- Royal Preloader CSS -->
+  <link href="assets/css/royal_preloader.css" rel="stylesheet">
+
+  <!-- jQuery Files -->
+  <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+
+  <!-- Parallax File -->
+  <script type="text/javascript" src="assets/js/parallax.min.js"></script>
+
+  <!-- Royal Preloader -->
+  <!--<script type="text/javascript" src="assets/js/royal_preloader.min.js"></script>-->
+  <script type="text/javascript">
+    Royal_Preloader.config({
+      mode: 'number',
+      showProgress: false,
+      background: '#e7e7e7'
+    });
+  </script>
+
+  <!-- Stylesheets -->
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+  <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css  " rel="stylesheet">
+  <link href="assets/css/pe-icon-7-stroke.css" rel="stylesheet">
+  <link href="assets/css/magnific-popup.css" rel="stylesheet">
+  <link href="assets/css/logoiconfont.css" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet" title="main-css">
+
+  <!-- Style Switcher / remove for production -->
+  <link href="assets/css/style-switcher.css" rel="stylesheet">
+
+  <!-- Alternate Stylesheets / choose what color and base you want and include the 2 files regularly AFTER style.css above -->
+  <link rel="alternate stylesheet" type="text/css" href="assets/css/blue.css" title="blue" disabled="">
+  <link rel="alternate stylesheet" type="text/css" href="assets/css/colors/green.css" title="green">
+  <link rel="alternate stylesheet" type="text/css" href="assets/css/orange.css" title="orange" disabled="">
+  <link rel="alternate stylesheet" type="text/css" href="assets/css/red.css" title="red" disabled="">
+  <link rel="alternate stylesheet" type="text/css" href="assets/css/orangelight.css" title="orangelight" disabled="">
+  <link rel="alternate stylesheet" type="text/css" href="assets/css/pinkish.css" title="pinkish" disabled="">
+  <link rel="alternate stylesheet" type="text/css" href="assets/css/seagul.css" title="seagul" disabled="">
+  <link rel="alternate stylesheet" type="text/css" href="assets/css/base-light.css" title="base-light">
+  <style>[touch-action="none"] {
+    -ms-touch-action: none;
+    touch-action: none;
+    touch-action-delay: none;
+  }
+
+  body /shadow-deep/ [touch-action="none"] {
+    -ms-touch-action: none;
+    touch-action: none;
+    touch-action-delay: none;
+  }
+
+  [touch-action="auto"] {
+    -ms-touch-action: auto;
+    touch-action: auto;
+    touch-action-delay: none;
+  }
+
+  body /shadow-deep/ [touch-action="auto"] {
+    -ms-touch-action: auto;
+    touch-action: auto;
+    touch-action-delay: none;
+  }
+
+  [touch-action="pan-x"] {
+    -ms-touch-action: pan-x;
+    touch-action: pan-x;
+    touch-action-delay: none;
+  }
+
+  body /shadow-deep/ [touch-action="pan-x"] {
+    -ms-touch-action: pan-x;
+    touch-action: pan-x;
+    touch-action-delay: none;
+  }
+
+  [touch-action="pan-y"] {
+    -ms-touch-action: pan-y;
+    touch-action: pan-y;
+    touch-action-delay: none;
+  }
+
+  body /shadow-deep/ [touch-action="pan-y"] {
+    -ms-touch-action: pan-y;
+    touch-action: pan-y;
+    touch-action-delay: none;
+  }
+
+  [touch-action="pan-x pan-y"], [touch-action="pan-y pan-x"] {
+    -ms-touch-action: pan-x pan-y;
+    touch-action: pan-x pan-y;
+    touch-action-delay: none;
+  }
+
+  body /shadow-deep/ [touch-action="pan-x pan-y"], body /shadow-deep/ [touch-action="pan-y pan-x"] {
+    -ms-touch-action: pan-x pan-y;
+    touch-action: pan-x pan-y;
+    touch-action-delay: none;
+  }
+  </style>
+  <!--<link type="text/css" rel="stylesheet" href="chrome-extension://pioclpoplcdbaefihamjohnefbikjilc/content.css">-->
+  <style type="text/css">.gm-style {
+    font: 400 11px Roboto, Arial, sans-serif;
+    text-decoration: none;
+  }
+
+  .gm-style img {
+    max-width: none;
+  }</style>
 </head>
-<body>
-  <app-root></app-root>
+<body class="" data-spy="scroll" data-target=".navbar" data-offset="70" data-gr-c-s-loaded="true">
+<app-root>...</app-root>
+<div class="parallax-mirror"
+     style="visibility: hidden; z-index: -100; position: fixed; top: 0px; left: 0px; overflow: hidden; height: 506px; width: 1349px;">
+  <img class="parallax-slider" src="./assets/images/slider1.jpg"
+       style="position: absolute; height: 751px; width: 1349px; max-width: none;"></div>
+<!-- Begin Header -->
+<header>
+  <!-- Begin Navigation -->
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="row">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                  data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand scroll-link"
+             href="#home" data-id="home"><span
+            class="icon-handle-streamline-vector logo"></span></a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#home" data-id="home"
+                   class="scroll-link">Home</a></li>
+            <li><a href="#ideology"
+                   data-id="ideology" class="scroll-link">Ideology</a></li>
+            <li><a href="#services"
+                   data-id="services" class="scroll-link">Services</a></li>
+            <li><a href="#about" data-id="about"
+                   class="scroll-link">About</a></li>
+            <li><a href="#work" data-id="work"
+                   class="scroll-link">Work</a></li>
+            <li><a href="#team" data-id="team"
+                   class="scroll-link">Team</a></li>
+            <li><a href="#contact"
+                   data-id="contact" class="scroll-link">Contact</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div>
+    </div><!-- /.container-fluid -->
+  </nav>
+  <!-- End Navigation -->
+</header>
+<!-- End Header -->
+
+<!-- Begin Jumbotron -->
+<div id="home" class="jumbotron jumbotron-register">
+  <div id="particles-js">
+    <canvas class="particles-js-canvas-el" width="1349" height="554" style="width: 100%; height: 100%;"></canvas>
+  </div><!-- /.particles div -->
+  <div class="container center-vertically-holder">
+    <div class="center-vertically">
+      <div class="col-sm-7 col-lg-6 mt40-xs">
+        <h1 class="mb30 no-margin-top scaleReveal" data-sr-id="45"
+            style="; visibility: visible;  -webkit-transform: translateY(0) scale(1); opacity: 1;transform: translateY(0) scale(1); opacity: 1;-webkit-transition: -webkit-transform 1.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0.05s, opacity 1.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0.05s; transition: transform 1.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0.05s, opacity 1.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0.05s; ">
+           <strong>Good software, like wine </strong>, takes time.
+        </h1>
+        <p class="bottomReveal" data-sr-id="1"
+           style="; visibility: visible;  -webkit-transform: translateY(0) scale(1); opacity: 1;transform: translateY(0) scale(1); opacity: 1;-webkit-transition: -webkit-transform 1.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0.05s, opacity 1.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0.05s; transition: transform 1.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0.05s, opacity 1.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0.05s; ">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras est urna, imperdiet eget sem at,
+          pellentesque cursusiz elit. Etiam id ante et elit interdum sollicitudin.</p>
+        <p class="mb30 bottomReveal" data-sr-id="2"
+           style="; visibility: visible;  -webkit-transform: translateY(0) scale(1); opacity: 1;transform: translateY(0) scale(1); opacity: 1;-webkit-transition: -webkit-transform 1.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0.05s, opacity 1.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0.05s; transition: transform 1.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0.05s, opacity 1.5s cubic-bezier(0.6, 0.2, 0.1, 1) 0.05s; ">
+          Lorem ipsum dolor sit amet, consectet adipiscing elit. Cras est urna, imperd eget sem atez.</p>
+        <a href="https://www.youtube.com/watch?v=ARHl2apZ3q0" class="text-small popup-youtube mt20">
+          <span class="pe-7s-play"></span> Video
+        </a>
+      </div>
+
+      <div class="col-sm-5 col-lg-5 col-lg-offset-1 mt40-xs">
+        <img src="assets/images/botlogo.png" style="width: 300px" >
+      </div><!-- /.column -->
+    </div><!-- /.vertical center -->
+  </div><!-- /.container -->
+</div>
+<!-- End Jumbotron -->
+
+<!-- Begin Intro -->
+<section id="ideology">
+
+  <!-- Begin Hello Intro -->
+  <div id="hello-intro" class="pt60 pb60">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-2 col-sm-3">
+          <h2 class="no-margin "
+              style="; visibility: visible;
+              ">
+            Hello.</h2>
+        </div>
+        <div class="col-lg-10 col-sm-9 mt30-xs">
+          <h3 class="no-margin "
+              style="; visibility: visible; ">
+            We are a group of student with a focus on design and development of  Ai chatbots. Our team is from all
+            the faculties of SITE  and <strong>we know how to work to reach our goals.</strong>.</h3>
+        </div>
+      </div><!-- /.row -->
+    </div><!-- /.container -->
+  </div><!-- /.div -->
+  <!-- End Hello Intro -->
+
+  <!-- Begin Our Process Title -->
+  <div id="our-process-title" class="pt30 pb30">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h4 class="no-margin">Our Ideology</h4>
+        </div>
+      </div><!-- /.row -->
+    </div><!-- /.container -->
+  </div><!-- /.div -->
+  <!-- End Our Process Title -->
+
+  <!-- Begin Our Process -->
+  <div id="our-process">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-4 col-md-4 col-lg-4 process-box text-center pt50 pb50">
+            <div class="" data-sr-id="12"
+               style="; visibility: visible;">
+            <div class="process-intro">
+              <h3 class="process-number">01</h3>
+              <div><span class="process-icons fa fa-user " data-sr-id="40"
+                         style="; visibility: visible;
+                         "></span>
+              </div>
+              <h2>Effective<br>Communication</h2>
+            </div>
+            <div class="process-content">
+              <div><span class="process-icons fa fa-user"></span></div>
+              <h2 class="mt15 mb20">Effective<br>Communication</h2>
+              <p class="no-margin">Nullam suscipit, massa id tempor ullamcorper, lacus felis ac, id
+                vulputate daui risus porta libero.</p>
+            </div>
+          </div><!-- /.animation -->
+        </div><!-- /.column -->
+        <div class="col-sm-4 col-md-4 col-lg-4 process-box text-center pt50 pb50">
+          <div class="" data-sr-id="3"
+               style="; visibility: visible;
+                 ">
+            <div class="process-intro">
+              <h3 class="process-number">02</h3>
+              <div><span class="process-icons fa fa-user " data-sr-id="41"
+                         style="; visibility: visible;
+                         "></span>
+              </div>
+              <h2>Quality<br>Design Work</h2>
+            </div>
+            <div class="process-content">
+              <div><span class="process-icons fa fa-user"></span></div>
+              <h2 class="mt15 mb20">Quality<br>Design Work</h2>
+              <p class="no-margin">Nullam suscipit, massa id tempor ullamcorper, lacus felis ac, id
+                vulputate daui risus porta libero.</p>
+            </div>
+          </div><!-- /.animation -->
+        </div><!-- /.column -->
+        <div class="col-sm-4 col-md-4 col-lg-4 process-box text-center pt50 pb50 no-border-right">
+          <div class="" data-sr-id="23"
+               style="; visibility: visible;
+     ">
+            <div class="process-intro">
+              <h3 class="process-number">03</h3>
+              <div><span class="process-icons fa fa-user " data-sr-id="42"
+                         style="; visibility: visible;
+                          "></span>
+              </div>
+              <h2>Rocketship<br>Astro Designing</h2>
+            </div>
+            <div class="process-content">
+              <div><span class="process-icons fa fa-user"></span></div>
+              <h2 class="mt15 mb20">Rocketship<br>Astro Designing</h2>
+              <p class="no-margin">Nullam suscipit, massa id tempor ullamcorper, lacus felis ac, id
+                vulputate daui risus porta libero.</p>
+            </div>
+          </div><!-- /.animation -->
+        </div><!-- /.column -->
+      </div><!-- /.row -->
+    </div><!-- /.container -->
+  </div><!-- /.div -->
+  <!-- End Our Process -->
+
+  <!-- Begin Quote Carousel -->
+  <div id="carousel" class="testimonial-carousel pt40 pb20">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-10 col-md-offset-1 text-center">
+          <span class="fa fa-user heading-3-icon"></span>
+          <h2 class="heading-3">Testimonials</h2>
+          <div class="fade-quote-carousel carousel slide" id="quote-carousel" data-ride="carousel"
+               data-interval="3000">
+            <!-- Carousel indicators -->
+            <ol class="carousel-indicators">
+              <li data-target="#quote-carousel" data-slide-to="0" class="active"></li>
+              <li data-target="#quote-carousel" data-slide-to="1"></li>
+              <li data-target="#quote-carousel" data-slide-to="2"></li>
+            </ol>
+            <!-- Carousel items -->
+            <div class="carousel-inner">
+              <div class="active item">
+                <blockquote>
+                  <p>"Phasellus pulvinar lacinia elit nec tristique. Nulla accumsan velit id nulla
+                    tincidunt ornare. Sed cursus urna sed. Aliquam elementum orci at dolor
+                    viverra."</p>
+                </blockquote>
+              </div>
+              <div class="item">
+                <blockquote>
+                  <p>"Phasellus pulvinar lacinia elit nec tristique. Nulla accumsan velit id nulla
+                    tincidunt ornare. Sed cursus urna sed. Aliquam elementum orci at dolor
+                    viverra."</p>
+                </blockquote>
+              </div>
+              <div class="item">
+                <blockquote>
+                  <p>"Phasellus pulvinar lacinia elit nec tristique. Nulla accumsan velit id nulla
+                    tincidunt ornare. Sed cursus urna sed. Aliquam elementum orci at dolor
+                    viverra."</p>
+                </blockquote>
+              </div>
+            </div>
+
+          </div><!-- /.carousel -->
+        </div><!-- /.column -->
+      </div><!-- /.row -->
+    </div><!-- /.container -->
+  </div><!-- /.carousel -->
+  <!-- End Quote Carousel -->
+
+</section><!-- /.section -->
+<!-- End Intro -->
+
+<!-- Begin Services -->
+<section id="services" class="background2 section-padding">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 section-title text-center">
+        <h2>Services</h2>
+        <span class="section-divider"></span>
+      </div><!-- /.column -->
+    </div><!-- /.row -->
+
+    <div class="row">
+      <!-- Item 1 -->
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+        <div class="services-box " data-sr-id="13"
+             style="; visibility: visible;
+               ">
+          <span class="fa fa-user services-icon"></span>
+          <h3 class="service-name">1. Web Design</h3>
+          <p class="text-small">Lorem ipsum dolor sit amet, consectet adipiscing elit. Cras est urna, imperd
+            eget sem at, pellentes que cursus elit.</p>
+          <button type="button" class="btn btn-default mt10" data-toggle="modal"
+                  data-target="#item1-services">Info
+          </button>
+        </div>
+      </div><!-- /.column -->
+      <!-- Item 1 Modal -->
+      <div class="modal fade" id="item1-services" tabindex="-1" role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                class="ion-ios-close-empty"></span>
+              </button>
+              <span class="fa fa-user services-icon-2"></span>
+              <h4 class="service-title">Web Design</h4>
+            </div>
+            <div class="modal-body">
+              <p>No, thank ye, Bunger, said the English Captain, "he's welcome to the arm he has, since I
+                can't help it, and didn't know him then; but not to another one. No more White Whales
+                for me; I've lowered for him once.</p>
+              <h5 class="heading-1 modal-heading mb20">Why us</h5>
+              <p>"Well, then," interrupted Bunger, "give him your left arm for bait to get the right. Do
+                you know, gentlemen"—very gravely and mathematically bowing to each Captain in
+                succession—"Do you know, gentlemen, that the digestive organs of the whale are so
+                inscrutably constructed by Divine Providence, that it is quite impossible for him to
+                completely digest even a man's arm? And he knows it too.</p>
+              <h5 class="heading-1 modal-heading mb20">Focusing</h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius
+                sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed.</p>
+              <h5 class="heading-1 modal-heading mb20">Professionals</h5>
+              <p class="no-margin-bottom">"Good God!" cried the English Captain, to whom the question was
+                put. "What's the matter? He was heading east, I think.—Is your Captain crazy?"
+                whispering Fedallah. Phasellus pulvinar lacinia elit nec tristique.</p>
+            </div>
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+      </div><!-- /.modal -->
+
+      <!-- Item 2 -->
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 mt30-xs">
+        <div class="services-box " data-sr-id="33"
+             style="; visibility: visible;
+           ">
+          <span class="services-badge badge">New</span>
+          <span class="fa fa-user services-icon"></span>
+          <h3 class="service-name">2. Applications</h3>
+          <p class="text-small">Lorem ipsum dolor sit amet, consectet adipiscing elit. Cras est urna, imperd
+            eget sem at, pellentes que cursus elit.</p>
+          <button type="button" class="btn btn-default mt10" data-toggle="modal"
+                  data-target="#item2-services">Info
+          </button>
+        </div>
+      </div><!-- /.column -->
+      <!-- Item 2 Modal -->
+      <div class="modal fade" id="item2-services" tabindex="-1" role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                class="ion-ios-close-empty"></span>
+              </button>
+              <span class="fa fa-user services-icon-2"></span>
+              <h4 class="service-title">Applications</h4>
+            </div>
+            <div class="modal-body">
+              <p>No, thank ye, Bunger, said the English Captain, "he's welcome to the arm he has, since I
+                can't help it, and didn't know him then; but not to another one. No more White Whales
+                for me; I've lowered for him once.</p>
+              <h5 class="heading-1 modal-heading mb20">Why us</h5>
+              <p>"Well, then," interrupted Bunger, "give him your left arm for bait to get the right. Do
+                you know, gentlemen"—very gravely and mathematically bowing to each Captain in
+                succession—"Do you know, gentlemen, that the digestive organs of the whale are so
+                inscrutably constructed by Divine Providence, that it is quite impossible for him to
+                completely digest even a man's arm? And he knows it too.</p>
+              <h5 class="heading-1 modal-heading mb20">Focusing</h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius
+                sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed.</p>
+              <h5 class="heading-1 modal-heading mb20">Professionals</h5>
+              <p class="no-margin-bottom">"Good God!" cried the English Captain, to whom the question was
+                put. "What's the matter? He was heading east, I think.—Is your Captain crazy?"
+                whispering Fedallah. Phasellus pulvinar lacinia elit nec tristique.</p>
+            </div>
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+      </div><!-- /.modal -->
+
+      <!-- Item 3 -->
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 mt30-sm mt30-xs">
+        <div class="services-box " data-sr-id="24"
+             style="; visibility: visible;
+              ">
+          <span class="fa fa-user services-icon"></span>
+          <h3 class="service-name">3. Photography</h3>
+          <p class="text-small">Lorem ipsum dolor sit amet, consectet adipiscing elit. Cras est urna, imperd
+            eget sem at, pellentes que cursus elit.</p>
+          <button type="button" class="btn btn-default mt10" data-toggle="modal"
+                  data-target="#item3-services">Info
+          </button>
+        </div>
+      </div><!-- /.column -->
+      <!-- Item 3 Modal -->
+      <div class="modal fade" id="item3-services" tabindex="-1" role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                class="ion-ios-close-empty"></span>
+              </button>
+              <span class="fa fa-user services-icon-2"></span>
+              <h4 class="service-title">Photography</h4>
+            </div>
+            <div class="modal-body">
+              <p>No, thank ye, Bunger, said the English Captain, "he's welcome to the arm he has, since I
+                can't help it, and didn't know him then; but not to another one. No more White Whales
+                for me; I've lowered for him once.</p>
+              <h5 class="heading-1 modal-heading mb20">Why us</h5>
+              <p>"Well, then," interrupted Bunger, "give him your left arm for bait to get the right. Do
+                you know, gentlemen"—very gravely and mathematically bowing to each Captain in
+                succession—"Do you know, gentlemen, that the digestive organs of the whale are so
+                inscrutably constructed by Divine Providence, that it is quite impossible for him to
+                completely digest even a man's arm? And he knows it too.</p>
+              <h5 class="heading-1 modal-heading mb20">Focusing</h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius
+                sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed.</p>
+              <h5 class="heading-1 modal-heading mb20">Professionals</h5>
+              <p class="no-margin-bottom">"Good God!" cried the English Captain, to whom the question was
+                put. "What's the matter? He was heading east, I think.—Is your Captain crazy?"
+                whispering Fedallah. Phasellus pulvinar lacinia elit nec tristique.</p>
+            </div>
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+      </div><!-- /.modal -->
+
+      <!-- Item 4 -->
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 mt30">
+        <div class="services-box " data-sr-id="14"
+             style="; visibility: visible;
+              ">
+          <span class="services-badge badge">New</span>
+          <span class="pe-7s-anchor services-icon"></span>
+          <h3 class="service-name">4. Iconography</h3>
+          <p class="text-small">Lorem ipsum dolor sit amet, consectet adipiscing elit. Cras est urna, imperd
+            eget sem at, pellentes que cursus elit.</p>
+          <button type="button" class="btn btn-default mt10" data-toggle="modal"
+                  data-target="#item4-services">Info
+          </button>
+        </div>
+      </div><!-- /.column -->
+      <!-- Item 4 Modal -->
+      <div class="modal fade" id="item4-services" tabindex="-1" role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                class="ion-ios-close-empty"></span>
+              </button>
+              <span class="fa fa-user services-icon-2"></span>
+              <h4 class="service-title">Iconography</h4>
+            </div>
+            <div class="modal-body">
+              <p>No, thank ye, Bunger, said the English Captain, "he's welcome to the arm he has, since I
+                can't help it, and didn't know him then; but not to another one. No more White Whales
+                for me; I've lowered for him once.</p>
+              <h5 class="heading-1 modal-heading mb20">Why us</h5>
+              <p>"Well, then," interrupted Bunger, "give him your left arm for bait to get the right. Do
+                you know, gentlemen"—very gravely and mathematically bowing to each Captain in
+                succession—"Do you know, gentlemen, that the digestive organs of the whale are so
+                inscrutably constructed by Divine Providence, that it is quite impossible for him to
+                completely digest even a man's arm? And he knows it too.</p>
+              <h5 class="heading-1 modal-heading mb20">Focusing</h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius
+                sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed.</p>
+              <h5 class="heading-1 modal-heading mb20">Professionals</h5>
+              <p class="no-margin-bottom">"Good God!" cried the English Captain, to whom the question was
+                put. "What's the matter? He was heading east, I think.—Is your Captain crazy?"
+                whispering Fedallah. Phasellus pulvinar lacinia elit nec tristique.</p>
+            </div>
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+      </div><!-- /.modal -->
+
+      <!-- Item 5 -->
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 mt30">
+        <div class="services-box " data-sr-id="4"
+             style="; visibility: visible;
+          ">
+          <span class="fa fa-user services-icon"></span>
+          <h3 class="service-name">5. Support</h3>
+          <p class="text-small">Lorem ipsum dolor sit amet, consectet adipiscing elit. Cras est urna, imperd
+            eget sem at, pellentes que cursus elit.</p>
+          <button type="button" class="btn btn-default mt10" data-toggle="modal"
+                  data-target="#item5-services">Info
+          </button>
+        </div>
+      </div><!-- /.column -->
+      <!-- Item 5 Modal -->
+      <div class="modal fade" id="item5-services" tabindex="-1" role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                class="ion-ios-close-empty"></span>
+              </button>
+              <span class="fa fa-user services-icon-2"></span>
+              <h4 class="service-title">Support</h4>
+            </div>
+            <div class="modal-body">
+              <p>No, thank ye, Bunger, said the English Captain, "he's welcome to the arm he has, since I
+                can't help it, and didn't know him then; but not to another one. No more White Whales
+                for me; I've lowered for him once.</p>
+              <h5 class="heading-1 modal-heading mb20">Why us</h5>
+              <p>"Well, then," interrupted Bunger, "give him your left arm for bait to get the right. Do
+                you know, gentlemen"—very gravely and mathematically bowing to each Captain in
+                succession—"Do you know, gentlemen, that the digestive organs of the whale are so
+                inscrutably constructed by Divine Providence, that it is quite impossible for him to
+                completely digest even a man's arm? And he knows it too.</p>
+              <h5 class="heading-1 modal-heading mb20">Focusing</h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius
+                sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed.</p>
+              <h5 class="heading-1 modal-heading mb20">Professionals</h5>
+              <p class="no-margin-bottom">"Good God!" cried the English Captain, to whom the question was
+                put. "What's the matter? He was heading east, I think.—Is your Captain crazy?"
+                whispering Fedallah. Phasellus pulvinar lacinia elit nec tristique.</p>
+            </div>
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+      </div><!-- /.modal -->
+
+      <!-- Item 6 -->
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 mt30">
+        <div class="services-box " data-sr-id="25"
+             style="; visibility: visible;
+              ">
+          <span class="services-badge badge">New</span>
+          <span class="fa fa-user services-icon"></span>
+          <h3 class="service-name">6. Audio</h3>
+          <p class="text-small">Lorem ipsum dolor sit amet, consectet adipiscing elit. Cras est urna, imperd
+            eget sem at, pellentes que cursus elit.</p>
+          <button type="button" class="btn btn-default mt10" data-toggle="modal"
+                  data-target="#item6-services">Info
+          </button>
+        </div>
+      </div><!-- /.column -->
+      <!-- Item 6 Modal -->
+      <div class="modal fade" id="item6-services" tabindex="-1" role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                class="ion-ios-close-empty"></span>
+              </button>
+              <span class="pe-7s-volume services-icon-2"></span>
+              <h4 class="service-title">Audio</h4>
+            </div>
+            <div class="modal-body">
+              <p>No, thank ye, Bunger, said the English Captain, "he's welcome to the arm he has, since I
+                can't help it, and didn't know him then; but not to another one. No more White Whales
+                for me; I've lowered for him once.</p>
+              <h5 class="heading-1 modal-heading mb20">Why us</h5>
+              <p>"Well, then," interrupted Bunger, "give him your left arm for bait to get the right. Do
+                you know, gentlemen"—very gravely and mathematically bowing to each Captain in
+                succession—"Do you know, gentlemen, that the digestive organs of the whale are so
+                inscrutably constructed by Divine Providence, that it is quite impossible for him to
+                completely digest even a man's arm? And he knows it too.</p>
+              <h5 class="heading-1 modal-heading mb20">Focusing</h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius
+                sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed.</p>
+              <h5 class="heading-1 modal-heading mb20">Professionals</h5>
+              <p class="no-margin-bottom">"Good God!" cried the English Captain, to whom the question was
+                put. "What's the matter? He was heading east, I think.—Is your Captain crazy?"
+                whispering Fedallah. Phasellus pulvinar lacinia elit nec tristique.</p>
+            </div>
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+      </div><!-- /.modal -->
+    </div><!-- /.row -->
+  </div><!-- /.container -->
+</section><!-- /.section -->
+<!-- End Services -->
+
+<!-- Begin About -->
+<section id="about" class="background1 section-padding">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 section-title text-center">
+        <h2>About</h2>
+        <span class="section-divider"></span>
+      </div><!-- /.column -->
+    </div><!-- /.row -->
+    <div class="row mb15">
+      <div class="col-sm-5 " data-sr-id="15"
+           style="; visibility: visible;
+           ">
+        <h5 class="heading-1 mb20">Our Trade</h5>
+        <h3 class="mb15 no-margin-top">Designing, Developing, and <br>Innovating for people like you...</h3>
+        <p class="no-margin text-small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec tristiq
+          enim. Integer eu <strong>neque</strong> arcu. Aenean sed odio nibh. Cras imperdiet, arcu eget dictum
+          vestibulum elit.</p>
+      </div><!-- /.column -->
+      <div class="col-sm-7 mt30-xs " data-sr-id="26"
+           style="; visibility: visible;
+          ">
+        <h5 class="heading-1 mb20">How we started it</h5>
+        <span class="icon-handle-streamline-vector logo-about"></span>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras est urna, imperdiet eget sem at,
+          pellentesque cursus elit. Etiam id ante et elit interdum sollicitudin. Cras imperdiet, arcu eget
+          dictum vestibulum elit.</p>
+        <p>Curabitur egestas interdum ex, sed commodo ipsum consectetur vitae. Nulla auctor ante erat. Class
+          aptent taciti sociosqu nostra enean sed.</p>
+      </div><!-- /.column -->
+    </div><!-- /.row -->
+    <div class="row mb30">
+      <div class="col-sm-9 " data-sr-id="16"
+           style="; visibility: visible;
+         ">
+        <h5 class="heading-1 mb20">Why?</h5>
+        <p class="lead no-margin">Lorem ipsum dolor sit amet, consectetur adipicing elit. tristique enim.
+          Integer euef neque arcu. Aenean sed odio nibh. <strong>Cras imperdiet</strong>, arcu eget dictum
+          vestibulumizor. Lorem ipsil dolor sit amet, consectetur adipiscing elit.</p>
+      </div><!-- /.column -->
+      <div class="col-sm-3 mt30-xs " data-sr-id="27"
+           style="; visibility: visible;
+          ">
+        <h5 class="heading-1 mb20">Quote</h5>
+        <p class="no-margin text-small"><i>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut
+          voluptatum eius sapiente, totam reiciendis temporibus quibusdam."</i></p>
+      </div><!-- /.column -->
+    </div><!-- /.row -->
+    <div class="row">
+      <div class="col-lg-7 col-sm-5 " data-sr-id="5"
+           style="; visibility: visible;
+          ">
+        <h5 class="heading-1 mb20">Skills</h5>
+        <div class="progress">
+          <div class="progress-bar text-left" role="progressbar" aria-valuenow="60" aria-valuemin="0"
+               aria-valuemax="100" style="width: 60%;">
+            Development
+          </div>
+        </div>
+        <div class="progress">
+          <div class="progress-bar text-left" role="progressbar" aria-valuenow="75" aria-valuemin="0"
+               aria-valuemax="100" style="width: 75%;">
+            Design
+          </div>
+        </div>
+        <div class="progress">
+          <div class="progress-bar text-left" role="progressbar" aria-valuenow="57" aria-valuemin="0"
+               aria-valuemax="100" style="width: 57%;">
+            Photography
+          </div>
+        </div>
+        <div class="progress">
+          <div class="progress-bar text-left" role="progressbar" aria-valuenow="90" aria-valuemin="0"
+               aria-valuemax="100" style="width: 90%;">
+            Icon Design
+          </div>
+        </div>
+        <div class="progress">
+          <div class="progress-bar text-left" role="progressbar" aria-valuenow="70" aria-valuemin="0"
+               aria-valuemax="100" style="width: 70%;">
+            Audio
+          </div>
+        </div>
+        <div class="progress-meter mb30-xs">
+          <div class="meter meter-left" style="width: 30%;"><span class="meter-text">Beginner</span></div>
+          <div class="meter meter-left" style="width: 20%;"><span class="meter-text">Intermediate</span></div>
+          <div class="meter meter-right" style="width: 20%;"><span class="meter-text">Pro</span></div>
+          <div class="meter meter-right" style="width: 30%;"><span class="meter-text">Master</span></div>
+        </div>
+      </div><!-- /.column -->
+      <div class="col-lg-5 col-sm-7 mt10 " data-sr-id="44"
+           style="; visibility: visible;
+            ">
+        <div id="about-carousel" class="basic-carousel carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#about-carousel" data-slide-to="0" class="active"></li>
+            <li data-target="#about-carousel" data-slide-to="1"></li>
+            <li data-target="#about-carousel" data-slide-to="2"></li>
+          </ol>
+
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner" role="listbox">
+            <div class="item active">
+              <img src="./assets/images/placeholder.png" alt="..."
+                   class="img-responsive">
+            </div>
+            <div class="item">
+              <img src="./assets/images/placeholder2.png" alt="..."
+                   class="img-responsive">
+            </div>
+            <div class="item">
+              <img src="./assets/images/placeholder3.png" alt="..."
+                   class="img-responsive">
+            </div>
+          </div>
+        </div>
+      </div><!-- /.column -->
+    </div><!-- /.row -->
+  </div><!-- /.container -->
+</section><!-- /.section -->
+<!-- End About -->
+
+<!-- Begin Our Count -->
+<section id="ourcount" class="section-padding parallax-window our-count" data-parallax="scroll"
+         data-image-src="assets/images/slider1.jpg">
+  <div class="container">
+    <div class="row mb30">
+      <div class="section-title col-sm-8 col-sm-offset-2 col-lg-6 col-lg-offset-3 text-center">
+        <h2>The Count</h2>
+        <span class="section-divider mb15"></span>
+        <p class="no-margin">We have spent various amounts of time on activities. Oh and we like coffee and free
+          time as well.</p>
+      </div><!-- /.column -->
+    </div><!-- /.row -->
+    <div class="row">
+      <div class="col-sm-6 col-md-3 item " data-sr-id="17"
+           style="; visibility: visible;
+           ">
+        <div class="circle-hold">
+          <i class="ion-coffee"></i>
+        </div>
+        <h2 class="timer mb5" data-from="1" data-to="1234" data-refresh-interval="20">1</h2>
+        <p class="no-margin">Cups of coffee</p>
+      </div><!-- /.column -->
+      <div class="col-sm-6 col-md-3 item mt30-xs " data-sr-id="28"
+           style="; visibility: visible;
+          ">
+        <div class="circle-hold">
+          <i class="ion-code"></i>
+        </div>
+        <h2 class="timer mb5" data-from="1" data-to="15381" data-refresh-interval="20">1</h2>
+        <p class="no-margin">Lines of code</p>
+      </div><!-- /.column -->
+      <div class="col-sm-6 col-md-3 item mt30-xs mt30-sm " data-sr-id="18"
+           style="; visibility: visible;
+           ">
+        <div class="circle-hold">
+          <i class="ion-android-people"></i>
+        </div>
+        <h2 class="timer mb5" data-from="1" data-to="4" data-refresh-interval="20">1</h2>
+        <p class="no-margin">Members</p>
+      </div><!-- /.column -->
+      <div class="col-sm-6 col-md-3 item mt30-xs mt30-sm " data-sr-id="29"
+           style="; visibility: visible;
+            ">
+        <div class="circle-hold">
+          <i class="ion-android-restaurant"></i>
+        </div>
+        <h2 class="timer mb5" data-from="1" data-to="150" data-refresh-interval="20">1</h2>
+        <p class="no-margin">Pizzas eaten</p>
+      </div><!-- /.column -->
+    </div><!-- /.row -->
+  </div><!-- /.container -->
+</section><!-- /.section -->
+<!-- End Our Count -->
+
+<!-- Begin Work -->
+<section id="work" class="background1 section-padding-top">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xs-12 section-title text-center">
+        <h2>Work</h2>
+        <span class="section-divider mb15"></span>
+        <p class="mb30 " data-sr-id="46"
+           style="; visibility: visible;
+           ">
+          We do awesome stuff, and yeah.</p>
+      </div><!-- /.column -->
+    </div><!-- /.row -->
+    <div class="row">
+      <div class="col-xs-12 text-center mb50">
+        <!-- Filter Buttons -->
+        <button class="filter btn btn-default btn-category btn-lg active" data-filter="all">All</button>
+        <button class="filter btn btn-default btn-category btn-lg" data-filter=".identity">Identity</button>
+        <button class="filter btn btn-default btn-category btn-lg" data-filter=".print">Print</button>
+        <button class="filter btn btn-default btn-category btn-lg" data-filter=".graphics">Graphics</button>
+        <button class="filter btn btn-default btn-category btn-lg" data-filter=".web">Web</button>
+
+        <!-- Sort Buttons -->
+        <button class="sort btn btn-default btn-sort btn-lg" data-sort="my-order:asc"><span
+          class="ion-ios-plus-empty"></span></button>
+        <button class="sort btn btn-default btn-sort btn-lg" data-sort="my-order:desc"><span
+          class="ion-ios-minus-empty"></span></button>
+      </div><!-- /.column -->
+    </div><!-- /.row -->
+    <div id="thework">
+      <!-- Item 1 -->
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 portfolio-box no-padding mix graphics" data-my-order="3"
+           style="display: inline-block;" data-bound="">
+        <div class="portfolio-image-holder"><img src="assets/images/work/1.jpg"
+                                                 alt="1" class="img-responsive portfolio-image"></div>
+        <span class="portfolio-badge badge">Graphics</span>
+        <span class="portfolio-hover">
+						<span>
+							<a href="#" target="_blank">
+								<span class="portfolio-links"><span
+                  class="ion-ios-arrow-right portfolio-links-icons"></span></span>
+							</a>
+							<a href="assets/images/work/1.jpg" class="zoom"
+                 title="Equipt Design">
+								<span class="portfolio-links"><span
+                  class="ion-arrow-expand portfolio-links-icons"></span></span>
+							</a>
+							<span class="project-title no-margin-bottom mt10">Equipt Design</span>
+						</span>
+					</span>
+      </div><!-- /.column -->
+
+      <!-- Item 2 -->
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 portfolio-box no-padding mix print identity"
+           data-my-order="6" style="display: inline-block;" data-bound="">
+        <div class="portfolio-image-holder"><img src="assets/images/work/2.jpg"
+                                                 alt="2" class="img-responsive portfolio-image"></div>
+        <span class="portfolio-badge badge">Print + Identity</span>
+        <span class="portfolio-hover">
+						<span>
+							<a href="#" target="_blank">
+								<span class="portfolio-links"><span
+                  class="ion-ios-arrow-right portfolio-links-icons"></span></span>
+							</a>
+							<a href="assets/images/work/2.jpg" class="zoom"
+                 title="Goodman&#39;s Burger">
+								<span class="portfolio-links"><span
+                  class="ion-arrow-expand portfolio-links-icons"></span></span>
+							</a>
+							<span class="project-title no-margin-bottom mt10">Goodman's Burger</span>
+						</span>
+					</span>
+      </div><!-- /.column -->
+
+      <!-- Item 3 -->
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 portfolio-box no-padding mix identity" data-my-order="4"
+           style="display: inline-block;" data-bound="">
+        <div class="portfolio-image-holder"><img src="assets/images/work/3.jpg"
+                                                 alt="3" class="img-responsive portfolio-image"></div>
+        <span class="portfolio-badge badge">Print</span>
+        <span class="portfolio-hover">
+						<span>
+							<a href="#" target="_blank">
+								<span class="portfolio-links"><span
+                  class="ion-ios-arrow-right portfolio-links-icons"></span></span>
+							</a>
+							<a href="assets/images/work/3.jpg" class="zoom"
+                 title="Paper Mockup">
+								<span class="portfolio-links"><span
+                  class="ion-arrow-expand portfolio-links-icons"></span></span>
+							</a>
+							<span class="project-title no-margin-bottom mt10">Paper Mockup</span>
+						</span>
+					</span>
+      </div><!-- /.column -->
+
+      <!-- Item 4 -->
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 portfolio-box no-padding mix graphics" data-my-order="5"
+           style="display: inline-block;" data-bound="">
+        <div class="portfolio-image-holder"><img src="assets/images/work/4.jpg"
+                                                 alt="4" class="img-responsive portfolio-image"></div>
+        <span class="portfolio-badge badge">Graphics</span>
+        <span class="portfolio-hover">
+						<span>
+							<a href="#" target="_blank">
+								<span class="portfolio-links"><span
+                  class="ion-ios-arrow-right portfolio-links-icons"></span></span>
+							</a>
+							<a href="assets/images/work/4.jpg" class="zoom"
+                 title="Simple Pleasure">
+								<span class="portfolio-links"><span
+                  class="ion-arrow-expand portfolio-links-icons"></span></span>
+							</a>
+							<span class="project-title no-margin-bottom mt10">Simple Pleasure</span>
+						</span>
+					</span>
+      </div><!-- /.column -->
+
+      <!-- Item 5 -->
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 portfolio-box no-padding mix print identity"
+           data-my-order="2" style="display: inline-block;" data-bound="">
+        <div class="portfolio-image-holder"><img src="assets/images/work/5.jpg"
+                                                 alt="5" class="img-responsive portfolio-image"></div>
+        <span class="portfolio-badge badge">Print + Identity</span>
+        <span class="portfolio-hover">
+						<span>
+							<a href="#" target="_blank">
+								<span class="portfolio-links"><span
+                  class="ion-ios-arrow-right portfolio-links-icons"></span></span>
+							</a>
+							<a href="assets/images/work/5.jpg" class="zoom"
+                 title="Wine Bottles">
+								<span class="portfolio-links"><span
+                  class="ion-arrow-expand portfolio-links-icons"></span></span>
+							</a>
+							<span class="project-title no-margin-bottom mt10">Wine Bottles</span>
+						</span>
+					</span>
+      </div><!-- /.column -->
+
+      <!-- Item 6 -->
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 portfolio-box no-padding mix web" data-my-order="1"
+           style="display: inline-block;" data-bound="">
+        <div class="portfolio-image-holder"><img src="assets/images/work/6.jpg"
+                                                 alt="6" class="img-responsive portfolio-image"></div>
+        <span class="portfolio-badge badge">Web</span>
+        <span class="portfolio-hover">
+						<span>
+							<a href="#" target="_blank">
+								<span class="portfolio-links"><span
+                  class="ion-ios-arrow-right portfolio-links-icons"></span></span>
+							</a>
+							<a href="assets/images/work/6.jpg" class="zoom" title="Web UI">
+								<span class="portfolio-links"><span
+                  class="ion-arrow-expand portfolio-links-icons"></span></span>
+							</a>
+							<span class="project-title no-margin-bottom mt10">Web UI</span>
+						</span>
+					</span>
+      </div><!-- /.column -->
+
+      <!-- Item 7 -->
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 portfolio-box no-padding mix graphics print"
+           data-my-order="9" style="display: inline-block;" data-bound="">
+        <div class="portfolio-image-holder"><img src="assets/images/work/7.jpg"
+                                                 alt="7" class="img-responsive portfolio-image"></div>
+        <span class="portfolio-badge badge">Graphics + Print</span>
+        <span class="portfolio-hover">
+						<span>
+							<a href="#" target="_blank">
+								<span class="portfolio-links"><span
+                  class="ion-ios-arrow-right portfolio-links-icons"></span></span>
+							</a>
+							<a href="assets/images/work/7.jpg" class="zoom"
+                 title="Hello World">
+								<span class="portfolio-links"><span
+                  class="ion-arrow-expand portfolio-links-icons"></span></span>
+							</a>
+							<span class="project-title no-margin-bottom mt10">Hello World</span>
+						</span>
+					</span>
+      </div><!-- /.column -->
+
+      <!-- Item 8 -->
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 portfolio-box no-padding mix web" data-my-order="7"
+           style="display: inline-block;" data-bound="">
+        <div class="portfolio-image-holder"><img src="assets/images/work/8.jpg"
+                                                 alt="8" class="img-responsive portfolio-image"></div>
+        <span class="portfolio-badge badge">Web</span>
+        <span class="portfolio-hover">
+						<span>
+							<a href="#" target="_blank">
+								<span class="portfolio-links"><span
+                  class="ion-ios-arrow-right portfolio-links-icons"></span></span>
+							</a>
+							<a href="assets/images/work/8.jpg" class="zoom"
+                 title="We Create Mobile">
+								<span class="portfolio-links"><span
+                  class="ion-arrow-expand portfolio-links-icons"></span></span>
+							</a>
+							<span class="project-title no-margin-bottom mt10">We Create Mobile</span>
+						</span>
+					</span>
+      </div><!-- /.column -->
+
+      <!-- Item 9 -->
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 portfolio-box no-padding mix web" data-my-order="8"
+           style="display: inline-block;" data-bound="">
+        <div class="portfolio-image-holder"><img src="assets/images/work/9.jpg"
+                                                 alt="9" class="img-responsive portfolio-image"></div>
+        <span class="portfolio-badge badge">Web</span>
+        <span class="portfolio-hover">
+						<span>
+							<a href="#" target="_blank">
+								<span class="portfolio-links"><span
+                  class="ion-ios-arrow-right portfolio-links-icons"></span></span>
+							</a>
+							<a href="assets/images/work/9.jpg" class="zoom"
+                 title="Captain da Ship">
+								<span class="portfolio-links"><span
+                  class="ion-arrow-expand portfolio-links-icons"></span></span>
+							</a>
+							<span class="project-title no-margin-bottom mt10">Captain da Ship</span>
+						</span>
+					</span>
+      </div><!-- /.column -->
+    </div><!-- /.row -->
+  </div><!-- /.container -->
+</section><!-- /.section -->
+<!-- Begin Work -->
+
+<!-- Begin Timeline -->
+<section id="timeline" class="background1 section-padding-top">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 section-title text-center">
+        <h2>Timeline</h2>
+        <span class="section-divider"></span>
+      </div><!-- /.column -->
+    </div><!-- /.row -->
+    <div class="row">
+      <div class="col-lg-12">
+        <ul class="timeline pb80">
+
+          <!-- Item 1 -->
+          <li>
+            <div class="timeline-image " data-sr-id="47"
+                 style="; visibility: visible;
+                 ">
+              <img alt="" class="img-circle img-responsive"
+                   src="assets/images/work/timeline-1.jpg"></div>
+            <div class="timeline-panel " data-sr-id="19"
+                 style="; visibility: visible;
+                ">
+              <div class="timeline-heading">
+                <h5 class="heading-1 mb15">2015</h5>
+                <h4 class="subheading">We Began Our Venture</h4>
+              </div>
+              <div class="timeline-body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius
+                  sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed,
+                  incidunt et ea quo dolore laudantium consectetur!</p>
+              </div>
+            </div>
+          </li>
+
+          <!-- Item 2 -->
+          <li class="timeline-inverted">
+            <div class="timeline-image " data-sr-id="48"
+                 style="; visibility: visible;
+                ">
+              <img alt="" class="img-circle img-responsive"
+                   src="assets/images/work/timeline-2.jpg"></div>
+            <div class="timeline-panel " data-sr-id="30"
+                 style="; visibility: visible;
+                ">
+              <div class="timeline-heading">
+                <h5 class="heading-1 mb15">April 2016</h5>
+                <h4 class="subheading">A Company is in Mind</h4>
+              </div>
+              <div class="timeline-body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius
+                  sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed,
+                  incidunt et ea quo dolore laudantium consectetur!</p>
+              </div>
+            </div>
+          </li>
+
+          <!-- Item 3 -->
+          <li>
+            <div class="timeline-image " data-sr-id="49"
+                 style="; visibility: visible;
+                 ">
+              <img alt="" class="img-circle img-responsive"
+                   src="assets/images/work/timeline-3.jpg"></div>
+            <div class="timeline-panel " data-sr-id="20"
+                 style="; visibility: visible;
+                ">
+              <div class="timeline-heading">
+                <h5 class="heading-1 mb15">May 2016</h5>
+                <h4 class="subheading">We Launch The Hex Group</h4>
+              </div>
+              <div class="timeline-body"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt
+                ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit
+                vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+              </div>
+            </div>
+          </li>
+
+          <!-- Item 4 -->
+          <li class="timeline-inverted">
+            <div class="timeline-image " data-sr-id="50"
+                 style="; visibility: visible;
+                ">
+              <img alt="" class="img-circle img-responsive"
+                   src="assets/images/work/timeline-4.jpg"></div>
+            <div class="timeline-panel " data-sr-id="31"
+                 style="; visibility: visible;
+               ">
+              <div class="timeline-heading">
+                <h5 class="heading-1 mb15">July 2016</h5>
+                <h4 class="subheading">We Expand to 15 Employees</h4>
+              </div>
+              <div class="timeline-body">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius
+                  sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed,
+                  incidunt et ea quo dolore laudantium consectetur!</p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div><!-- /.column -->
+    </div><!-- /.row -->
+  </div><!-- /.container -->
+</section><!-- /.section -->
+<!-- End Timeline -->
+
+<!-- Begin Team -->
+<section id="team" class="background2 section-padding">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 section-title text-center">
+        <h2>Team</h2>
+        <span class="section-divider"></span>
+      </div><!-- /.column -->
+    </div><!-- /.row -->
+    <div class="row mb40">
+
+      <!-- Item 1 -->
+      <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3" data-sr-id="34"
+           style="; visibility: visible;
+         ">
+        <div class="team-member-box">
+          <h3>Gadir Novruzov</h3>
+          <p class="mb20">Developer</p>
+          <div class="team-image-wrapper">
+							<span class="team-image-hover">
+								<span class="team-hover-content">
+									<!-- Social -->
+									<span><span class="ion-android-share-alt social-icon-title"></span></span>
+					                <a href="#"><span
+                            class="ion-social-twitter social-icons-light-hover mr15"></span></a>
+					                <a href="#"><span
+                            class="ion-social-facebook social-icons-light-hover mr15"></span></a>
+					                <a href="#"><span
+                            class="ion-social-googleplus-outline social-icons-light-hover"></span></a>
+								</span>
+							</span>
+            <img src="assets/images/we/0%20(2).jpg" alt="1 Member"
+                 class="img-responsive img-circle team-member-img">
+          </div>
+        </div>
+      </div><!-- /.column -->
+
+      <!-- Item 2 -->
+      <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 mt30-xs " data-sr-id="6"
+           style="; visibility: visible;
+            ">
+        <div class="team-member-box">
+          <h3>Madina Mammadova</h3>
+          <p class="mb20">Developer</p>
+          <div class="team-image-wrapper">
+							<span class="team-image-hover">
+								<span class="team-hover-content">
+									<!-- Social -->
+									<span class="ion-android-share-alt social-icon-title"></span>
+					                <a href="#"><span
+                            class="ion-social-twitter social-icons-light-hover mr15"></span></a>
+					                <a href="#"><span
+                            class="ion-social-facebook social-icons-light-hover mr15"></span></a>
+					                <a href="#"><span
+                            class="ion-social-googleplus-outline social-icons-light-hover"></span></a>
+								</span>
+							</span>
+            <img src="assets/images/we/0%20(1).jpg" alt="2 Member"
+                 class="img-responsive img-circle team-member-img">
+          </div>
+        </div>
+      </div><!-- /.column -->
+
+      <!-- Item 3 -->
+      <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 mt30-sm mt30-xs " data-sr-id="35"
+           style="; visibility: visible;
+          ">
+        <div class="team-member-box">
+          <h3>Gulkhara Babayeva</h3>
+          <p class="mb20">Developer</p>
+          <div class="team-image-wrapper">
+							<span class="team-image-hover">
+								<span class="team-hover-content">
+									<!-- Social -->
+									<span><span class="ion-android-share-alt social-icon-title"></span></span>
+					                <a href="#"><span
+                            class="ion-social-twitter social-icons-light-hover mr15"></span></a>
+					                <a href="#"><span
+                            class="ion-social-facebook social-icons-light-hover mr15"></span></a>
+					                <a href="#"><span
+                            class="ion-social-googleplus-outline social-icons-light-hover"></span></a>
+								</span>
+							</span>
+            <img src="assets/images/we/0.jpg" alt="3 Member"
+                 class="img-responsive img-circle team-member-img">
+          </div>
+        </div>
+      </div><!-- /.column -->
+
+      <!-- Item 4 -->
+      <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 mt30-sm mt30-xs " data-sr-id="7"
+           style="; visibility: visible;
+        ">
+        <div class="team-member-box">
+          <h3>Nahid Guliyev</h3>
+          <p class="mb20">Developer</p>
+          <div class="team-image-wrapper">
+							<span class="team-image-hover">
+								<span class="team-hover-content">
+									<!-- Social -->
+									<span><span class="ion-android-share-alt social-icon-title"></span></span>
+					                <a href="#"><span
+                            class="ion-social-twitter social-icons-light-hover mr15"></span></a>
+					                <a href="#"><span
+                            class="ion-social-facebook social-icons-light-hover mr15"></span></a>
+					                <a href="#"><span
+                            class="ion-social-googleplus-outline social-icons-light-hover"></span></a>
+								</span>
+							</span>
+            <img src="assets/images/we/0%20(3).jpg" alt="4 Member"
+                 class="img-responsive img-circle team-member-img">
+          </div>
+        </div>
+      </div><!-- /.column -->
+    </div><!-- /.row -->
+    <div class="row">
+      <div class="col-sm-4 " data-sr-id="21"
+           style="; visibility: visible;
+          ">
+        <h5 class="heading-1 mb20">Our Goal</h5>
+        <h3 class="no-margin-top mb15">To create a better and more functional world through the web.</h3>
+        <p class="no-margin text-small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec tristiq
+          enim. Integer eu <strong>neque</strong> arcu. Aenean sed odio nibh. Cras imperdiet, arcu eget dictum
+          vestibulum elit.</p>
+      </div><!-- /.column -->
+      <div class="col-sm-8 mt20-xs rightReveal" data-sr-id="32"
+           style="; visibility: visible;  -webkit-transform: translateX(20px) scale(0.9); opacity: 0;transform: translateX(20px) scale(0.9); opacity: 0;">
+        <h5 class="heading-1 mb20">Who are we?</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipicing elit. tristique enim. Integer eu neque arcu. Aenean
+          sed odio nibh. Cras imperdiet, arcu eget dictum vestibulum. Lorem ipsil dolor sit amet, consectetur
+          adipiscing elit.</p>
+        <p class="no-margin">Integer eu neque arcu. Aenean sed odio nibh. Cras imperdiet, arcu eget dictum
+          vestibulum elit. Lorem ipsum dolor sit amet, consectetur adipicing elit. Etiam nisi orci, fringilla
+          eget nulla vel, aliquam porta ante. Integer bibendum nunc eu ipsum maximus, non ornare elit
+          molestie. </p>
+      </div><!-- /.column -->
+    </div><!-- /.row -->
+  </div><!-- /.container -->
+</section><!-- /.section -->
+<!-- End Team -->
+
+<!-- Begin Contact -->
+<section id="contact" class="background2 section-padding">
+  <div class="container">
+    <div class="row mb30">
+      <div class="col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3 section-title text-center">
+        <h2>Contact</h2>
+        <span class="section-divider mb15"></span>
+        <p class="no-margin " data-sr-id="52"
+           style="; visibility: visible;
+           ">
+          Our team is from all over the world and we know how to deliver quality pixels from miles away.</p>
+      </div><!-- /.column -->
+    </div><!-- /.row -->
+    <div class="row">
+      <div class="col-sm-5 col-lg-4">
+        <h5 class="heading-1 mb20">Visit Us</h5>
+        <h4 class="mb15">142 Pelican Drive • 1252nd Floor, Suite 420<br>New York City, New York 99912</h4>
+        <p class="no-margin text-xs-small">Temporibus autem quibusdam et aut officiis debitis aut rerum
+          necessitatibus saepe eveniet ut et voluptates. Temporibus autem quibusdam et aut.</p>
+        <hr class="mini-hr">
+        <p class="text-xs-small mb5"><strong class="text-switch">Email:</strong> info@particle.com</p>
+        <p class="text-xs-small mb5"><strong class="text-switch">Phone:</strong> +1 212-249-2390</p>
+        <p class="text-xs-small mb5"><strong class="text-switch">Fax:</strong> +1 112-444-2390</p>
+      </div><!-- /.column -->
+      <div class="col-sm-6 col-lg-7 mt30-xs">
+        <form data-toggle="validator" id="contactForm" name="contactForm" novalidate="true">
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="form-group">
+                <div class="controls">
+                  <input class="form-control" data-error="This section is required." id="msg_subject"
+                         placeholder="Subject *" required="" type="text">
+                  <div class="help-block with-errors"></div>
+                </div>
+              </div>
+            </div><!-- /.column -->
+            <div class="col-sm-6">
+              <div class="form-group">
+                <div class="controls">
+                  <input class="form-control" id="phone" placeholder="Phone" type="text">
+                </div>
+              </div>
+            </div><!-- /.column -->
+          </div><!-- /.row -->
+          <div class="row mb10">
+            <div class="col-sm-6">
+              <div class="form-group">
+                <div class="controls">
+                  <input class="form-control" data-error="This section is required." id="name"
+                         placeholder="Your Name *" required="" type="text">
+                  <div class="help-block with-errors"></div>
+                </div>
+              </div>
+            </div><!-- /.column -->
+            <div class="col-sm-6">
+              <div class="form-group">
+                <div class="controls">
+                  <input class="email form-control" data-error="This section is required." id="email"
+                         placeholder="Email *" required="" type="email">
+                  <div class="help-block with-errors"></div>
+                </div>
+              </div>
+            </div><!-- /.column -->
+          </div><!-- /.row -->
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="form-group">
+                <div class="controls">
+                                    <textarea class="form-control" data-error="This section is required." id="message"
+                                              placeholder="Message *" required="" rows="5"></textarea>
+                  <div class="help-block with-errors"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row mt15">
+            <div class="col-sm-6">
+              <div id="msgSubmit" class="h4 hidden mt10 no-margin-bottom"></div>
+            </div><!-- /.column -->
+            <div class="col-sm-6 text-right">
+              <button type="submit" id="submit" class="btn btn-default btn-lg disabled"
+                      style="pointer-events: all; cursor: pointer;">Send
+              </button>
+            </div><!-- /.column -->
+          </div><!-- /.row -->
+        </form><!-- /.form -->
+      </div><!-- /.column -->
+    </div><!-- /.row -->
+  </div><!-- /.container -->
+</section><!-- /.section -->
+<!-- End Contact -->
+<!-- Begin Footer -->
+<footer class="footer-padding">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-8 col-sm-offset-2 text-center">
+        <a href="#"><span
+          class="ion-social-twitter social-icons-dark-hover mr15"></span></a>
+        <a href="#"><span
+          class="ion-social-facebook social-icons-dark-hover mr15"></span></a>
+        <a href="#"><span
+          class="ion-social-googleplus-outline social-icons-dark-hover"></span></a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-8 col-sm-offset-2 text-small text-center">
+        <hr>
+        <button type="button" class="btn btn-primary btn-up-footer btn-lg scroll-top">Up</button>
+      </div><!-- /.column -->
+    </div><!-- /.row -->
+  </div><!-- /.container -->
+</footer><!-- /.footer -->
+<!-- Begin Footer -->
+
+
+<!-- Javascript Files -->
+<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="assets/js/particles.min.js"></script>
+<script type="text/javascript" src="assets/js/particlesRun.js"></script>
+<script type="text/javascript" src="assets/js/jquery.mixitup.js"></script>
+<script type="text/javascript" src="assets/js/form-validator.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery.inview.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery.countTo.js"></script>
+<script type="text/javascript">
+  /* ---- Counter (our count) ---- */
+  $('#ourcount').one('inview', function (event, isInView) {
+    if (isInView) {
+      $('.timer').countTo({speed: 3000});
+    }
+  });
+</script>
+<script type="text/javascript" src="assets/js/jquery.magnific-popup.min.js"></script>
+<!--<script type="text/javascript" src="assets/js/scrollreveal.min.js"></script>-->
+<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+<script type="text/javascript" src="assets/js/style-switcher.js"></script><!-- Remove for production -->
+<script type="text/javascript" src="assets/js/main.js"></script>
+
 </body>
+
 </html>
