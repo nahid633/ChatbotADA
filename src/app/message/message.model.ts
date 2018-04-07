@@ -12,6 +12,7 @@ import { uuid } from './../util/uuid';
    author: User;
    text: string;
    thread: Thread;
+   sender
 
    constructor(obj?: any) {
      this.id              = obj && obj.id              || uuid();
