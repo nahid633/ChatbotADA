@@ -1,0 +1,127 @@
+<p style="margin:0 auto">We all need people who will give us feedback</p>
+<mat-horizontal-stepper [linear]="isLinear" #stepper="matHorizontalStepper">
+  <mat-step>
+        <h4>The conversation between myself and the Chatbot felt natural</h4>
+    <label class="container">{{answers[0]}}
+      <input type="radio"  name="q1">
+      <span class="checkmark"></span>
+    </label>
+    <label class="container">{{answers[1]}}
+      <input type="radio"  name="q1">
+      <span class="checkmark"></span>
+    </label>
+    <label class="container">{{answers[2]}}
+      <input type="radio" name="q1">
+      <span class="checkmark"></span>
+    </label>
+    <label class="container">{{answers[3]}}
+      <input type="radio"  name="q1">
+      <span class="checkmark"></span>
+    </label>
+      <div>
+        <button mat-button matStepperNext>Next</button>
+      </div>
+  </mat-step>
+  <mat-step>
+    <label>I liked the behaviour of the Chatbot</label>
+
+    <label class="container">{{answers[0]}}
+      <input type="radio"  name="q2">
+      <span class="checkmark"></span>
+    </label>
+    <label class="container">{{answers[1]}}
+      <input type="radio"  name="q2">
+      <span class="checkmark"></span>
+    </label>
+    <label class="container">{{answers[2]}}
+      <input type="radio"  name="q2">
+      <span class="checkmark"></span>
+    </label>
+    <label class="container">{{answers[3]}}
+      <input type="radio"  name="q2">
+      <span class="checkmark"></span>
+    </label>
+    <div>
+      <button mat-button matStepperNext>Next</button>
+    </div>
+  </mat-step>
+
+  <mat-step>
+    <label>The Chatbot’s responses were always appropriate</label>
+    <label class="container">{{answers[0]}}
+      <input type="radio"  name="q3">
+      <span class="checkmark"></span>
+    </label>
+    <label class="container">{{answers[1]}}
+      <input type="radio"  name="q3">
+      <span class="checkmark"></span>
+    </label>
+    <label class="container">{{answers[2]}}
+      <input type="radio"  name="q3">
+      <span class="checkmark"></span>
+    </label>
+    <label class="container">{{answers[3]}}
+      <input type="radio"  name="q3">
+      <span class="checkmark"></span>
+    </label>
+    <div>
+      <button mat-button matStepperNext>Next</button>
+    </div>
+  </mat-step>
+
+  <mat-step>
+    <label>The conversation was coherent</label>
+    <label class="container">{{answers[0]}}
+      <input type="radio"  name="q4">
+      <span class="checkmark"></span>
+    </label>
+    <label class="container">{{answers[1]}}
+      <input type="radio"  name="q4">
+      <span class="checkmark"></span>
+    </label>
+    <label class="container">{{answers[2]}}
+      <input type="radio"  name="q4">
+      <span class="checkmark"></span>
+    </label>
+    <label class="container">{{answers[3]}}
+      <input type="radio"  name="q4">
+      <span class="checkmark"></span>
+    </label>
+    <div>
+      <button mat-button matStepperNext>Next</button>
+    </div>
+  </mat-step>
+    <mat-step>
+      <label>I found the Chatbot boring</label>
+      <br/>
+      <label class="container">{{answers[0]}}
+        <input type="radio" name="q5">
+        <span class="checkmark"></span>
+      </label>
+      <label class="container">{{answers[1]}}
+        <input type="radio"  name="q5">
+        <span class="checkmark"></span>
+      </label>
+      <label class="container">{{answers[2]}}
+        <input type="radio"  name="q5">
+        <span class="checkmark"></span>
+      </label>
+      <label class="container">{{answers[3]}}
+        <input type="radio"  name="q5">
+        <span class="checkmark"></span>
+      </label>
+      <div>
+        <button mat-button matStepperNext>Next</button>
+      </div>
+    </mat-step>
+  <mat-step>
+    <ng-template matStepLabel>Done</ng-template>
+    You are now done.
+    <div>
+      <button mat-button matStepperPrevious>Back</button>
+      <button mat-button>Save</button>
+      <button mat-button (click)="stepper.reset()">Reset</button>
+    </div>
+  </mat-step>
+</mat-horizontal-stepper>
+
