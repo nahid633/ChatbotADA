@@ -102,6 +102,6 @@ export class MessagesService  {
       });
   }
   getAnswers(question: string) {
-    return this.http.post('http://31.171.108.161:5011/api/v1.0/answer/', {question: question});
+    return this.http.post('https://31.171.108.161:5011/api/v1.0/answer/', {question: question});
   }
 }
