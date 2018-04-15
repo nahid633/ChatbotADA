@@ -1,4 +1,6 @@
 @charset "UTF-8";
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+
 /*!
  * Bootstrap v3.3.5 (http://getbootstrap.com)
  * Copyright 2011-2015 Twitter, Inc.
@@ -6080,8 +6082,27 @@ button.close {
   float: left;
   top: -10px;
   position: relative;
-  margin-right: 10px; }
+  margin-right: 10px;
+  margin-left: 15px;
+  margin-bottom: 5px;
+}
 
 .navbar-text {
   padding-right: 110px; }
-
+.mat-dialog-container {
+  background: #fff!important;
+  position: fixed!important;
+  bottom: 150px!important;
+  padding: 6px!important;
+  left: 20px;
+  z-index: 100!important;
+  width: 75% !important;
+  height: 57%!important;
+  margin: 20px;
+}
+.mat-horizontal-stepper-header .mat-step-icon, .mat-horizontal-stepper-header .mat-step-icon-not-touched {
+  background: #2ecc71!important;
+}
+.mat-step-icon .mat-icon {
+display: none;
+}

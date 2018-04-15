@@ -7,15 +7,18 @@
           <div class="panel-title-container">
             <h3 class="panel-title">
               <span class="glyphicon glyphicon-comment"></span>
-              Chat - {{currentThread.name}}
+              <!--Chat - {{currentThread.name}}-->
+              Chat - Bot ADA
             </h3>
           </div>
+          <a (click)="openFeedback()" style="float: right;text-decoration: none"  >Feedback</a>
+
           <div class="panel-buttons-container">
             <!-- you could put minimize or close buttons here -->
           </div>
         </div>
 
-        <div class="panel-body msg-container-base" style="min-height: 350px">
+        <div class="panel-body msg-container-base" style="min-height: 325px">
           <chat-message
           *ngFor="let message of messages | async"
           [message]="message">
@@ -39,4 +42,5 @@
 
     </div>
   </div>
+</div>
 </div>

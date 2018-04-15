@@ -35,7 +35,7 @@ const initialMessages: Array<Message> = [
   new Message({
     author: echo,
     sentAt: moment().subtract(1, 'minutes').toDate(),
-    text: `I\'ll echo whatever you send me`,
+    text: `Hello my friend`,
     thread: tEcho
   }),
   new Message({
@@ -55,13 +55,13 @@ const initialMessages: Array<Message> = [
 export class ChatExampleData {
   static init(messagesService: MessagesService,
               threadsService: ThreadsService,
-              UsersService: UsersService): void {
+              usersService: UsersService): void {
 
     // TODO make `messages` hot
     messagesService.messages.subscribe(() => ({}));
 
     // set "Juliet" as the current user
-    UsersService.setCurrentUser(me);
+    usersService.setCurrentUser(me);
 
     // create the initial messages
     initialMessages.map( (message: Message) => messagesService.addMessage(message) );
@@ -72,62 +72,63 @@ export class ChatExampleData {
   }
 
   static setupBots(messagesService: MessagesService): void {
-
     // echo bot
     messagesService.messagesForThreadUser(tEcho, echo)
       .forEach( (message: Message): void => {
-        messagesService.addMessage(
-          new Message({
-            author: echo,
-            text: message.text,
-            thread: tEcho
-          })
-        );
-      },
-                null);
-
-
-    // reverse bot
-    messagesService.messagesForThreadUser(tRev, rev)
-      .forEach( (message: Message): void => {
-        messagesService.addMessage(
-          new Message({
-            author: rev,
-            text: message.text.split('').reverse().join(''),
-            thread: tRev
-          })
-        );
-      },
-                null);
-
-    // waiting bot
-    messagesService.messagesForThreadUser(tWait, wait)
-      .forEach( (message: Message): void => {
-
-        let waitTime: number = parseInt(message.text, 10);
-        let reply: string;
-
-        if (isNaN(waitTime)) {
-          waitTime = 0;
-          reply = `I didn\'t understand ${message.text}. Try sending me a number`;
-        } else {
-          reply = `I waited ${waitTime} seconds to send you this.`;
-        }
-
-        setTimeout(
-          () => {
+          messagesService.getAnswers(message.text).subscribe((res) => {
             messagesService.addMessage(
               new Message({
-                author: wait,
-                text: reply,
-                thread: tWait
+                author: echo,
+                text: res['answer'],
+                thread: tEcho
               })
             );
-          },
-          waitTime * 1000);
+          });
       },
                 null);
 
+
+    // // reverse bot
+    // messagesService.messagesForThreadUser(tRev, rev)
+    //   .forEach( (message: Message): void => {
+    //     messagesService.addMessage(
+    //       new Message({
+    //         author: rev,
+    //         text: message.text.split('').reverse().join(''),
+    //         thread: tRev
+    //       })
+    //     );
+    //   },
+    //             null);
+    //
+    // // waiting bot
+    // messagesService.messagesForThreadUser(tWait, wait)
+    //   .forEach( (message: Message): void => {
+    //
+    //     let waitTime: number = parseInt(message.text, 10);
+    //     let reply: string;
+    //
+    //     if (isNaN(waitTime)) {
+    //       waitTime = 0;
+    //       reply = `I didn\'t understand ${message.text}. Try sending me a number`;
+    //     } else {
+    //       reply = `I waited ${waitTime} seconds to send you this.`;
+    //     }
+    //
+    //     setTimeout(
+    //       () => {
+    //         messagesService.addMessage(
+    //           new Message({
+    //             author: wait,
+    //             text: reply,
+    //             thread: tWait
+    //           })
+    //         );
+    //       },
+    //       waitTime * 1000);
+    //   },
+    //             null);
+    //
 
   }
 }

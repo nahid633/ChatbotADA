@@ -1,8 +1,9 @@
-import { Injectable } from '@angular/core';
+import {Injectable, OnInit} from '@angular/core';
 import { Subject, Observable } from 'rxjs';
 import { User } from '../user/user.model';
 import { Thread } from '../thread/thread.model';
 import { Message } from '../message/message.model';
+import {HttpClient} from '@angular/common/http';
 
 const initialMessages: Message[] = [];
 
@@ -11,7 +12,7 @@ interface IMessagesOperation extends Function {
 }
 
 @Injectable()
-export class MessagesService {
+export class MessagesService  {
   // a stream that publishes new messages only once
   newMessages: Subject<Message> = new Subject<Message>();
 
@@ -27,7 +28,7 @@ export class MessagesService {
   create: Subject<Message> = new Subject<Message>();
   markThreadAsRead: Subject<any> = new Subject<any>();
 
-  constructor() {
+  constructor(private http: HttpClient) {
     this.messages = this.updates
       // watch the updates and accumulate operations on the messages
       .scan((messages: Message[],
@@ -100,8 +101,7 @@ export class MessagesService {
                (message.author.id !== user.id);
       });
   }
+  getAnswers(question: string) {
+    return this.http.post('http://31.171.108.161:5011/api/v1.0/answer/', {question: question});
+  }
 }
-
-export const messagesServiceInjectables: Array<any> = [
-  MessagesService
-];

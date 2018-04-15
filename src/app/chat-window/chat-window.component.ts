@@ -13,6 +13,8 @@ import { Thread } from '../thread/thread.model';
 import { ThreadsService } from '../thread/threads.service';
 import { Message } from '../message/message.model';
 import { MessagesService } from '../message/messages.service';
+import {MatDialog} from '@angular/material';
+import {FeedbackComponent} from '../feedback/feedback.component';
 
 @Component({
   selector: 'chat-window',
@@ -28,8 +30,9 @@ export class ChatWindowComponent implements OnInit {
 
   constructor(public messagesService: MessagesService,
               public threadsService: ThreadsService,
-              public UsersService: UsersService,
-              public el: ElementRef) {
+              public usersService: UsersService,
+              public el: ElementRef,
+              public dialog: MatDialog) {
   }
 
   ngOnInit(): void {
@@ -42,7 +45,7 @@ export class ChatWindowComponent implements OnInit {
         this.currentThread = thread;
       });
 
-    this.UsersService.currentUser
+    this.usersService.currentUser
       .subscribe(
         (user: User) => {
           this.currentUser = user;
@@ -75,5 +78,10 @@ export class ChatWindowComponent implements OnInit {
     const scrollPane: any = this.el
       .nativeElement.querySelector('.msg-container-base');
     scrollPane.scrollTop = scrollPane.scrollHeight;
+  }
+  openFeedback() {
+    const dialogRef = this.dialog.open(FeedbackComponent);
+    dialogRef.afterClosed().subscribe(result => {
+    });
   }
 }
