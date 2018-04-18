@@ -28,4 +28,4 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 
 
-DEMO https://nahid633.github.io/ChatbotADA/
+DEMO http://chatbotada.olympiad.ada.edu.az
